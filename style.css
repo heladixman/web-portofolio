@@ -66,12 +66,14 @@ body {
     font-size: 48px;
     margin-bottom: 20px;
 }
+.hero h3{
+    font-size: 24px;
+}
 .hero p {
     font-size: 18px;
     color: #666;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 40px;
     max-width: 40%;
 }
 .hero .btn {
@@ -84,6 +86,18 @@ body {
 .hero img{
     border-radius: 50%;
     width: 200px;
+}
+.hero .social-media{
+    padding-bottom: 40px;
+}
+.hero .social-media a{
+    text-decoration: none;
+}
+.hero .social-media a img{
+    width: 50px;
+    border-radius: 50%;
+    gap: 20%;
+    padding: 0 12px;
 }
 .stats {
     display: flex;
