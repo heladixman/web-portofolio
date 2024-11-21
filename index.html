@@ -5,6 +5,281 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="style.css">
     </head>
+    <style>
+        @media only screen and (max-width: 600px){
+    .services .grid{
+        display: contents!important;
+    }
+    .services .grid .item {
+        width: calc(95% - 20px)!important;
+        margin: 20px 0!important;
+    }
+    .portfolio .grid .item {
+        width: 100%!important;
+    }
+    .header nav a{
+        display: none;
+    }
+    .hero p {
+        max-width: 90%!important;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+}
+.header {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6c63ff;
+}
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+.header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+.header .btn {
+    background: #6c63ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #f8f9fa, #EDF0F5);
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero h3{
+    font-size: 24px;
+}
+.hero p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 40%;
+}
+.hero .btn {
+    background: #6c63ff;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.hero img{
+    border-radius: 50%;
+    width: 200px;
+}
+.hero .social-media{
+    padding-bottom: 40px;
+}
+.hero .social-media a{
+    text-decoration: none;
+}
+.hero .social-media a img{
+    width: 50px;
+    border-radius: 50%;
+    gap: 20%;
+    padding: 0 12px;
+}
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    background: #fff;
+}
+.stats .stat {
+    text-align: center;
+}
+.stats .stat h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.stats .stat p {
+    font-size: 16px;
+    color: #666;
+}
+.portfolio {
+    padding: 60px 20px;
+    background: #fff;
+}
+.portfolio h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.portfolio .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+.portfolio .grid .item {
+    width: calc(26% - 20px);
+    padding: 12px;
+    text-align: center;
+}
+.portfolio .grid .item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+.portfolio .grid .item h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.portfolio .grid .item p {
+    font-size: 16px;
+    color: #666;
+    margin: 0 auto;
+    padding: 4px 0 24px;
+    max-width: 60%;
+}
+.portfolio .grid .item .btn {
+    background: #6c63ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.services {
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #f8f9fa, #EDF0F5);
+}
+.services h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.services .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.services .grid .item {
+    width: calc(33.333% - 20px);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.services .grid .item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.services .grid .item p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.clients {
+    padding: 60px 20px;
+    /* background: #fff; */
+    background: linear-gradient(135deg, #f8f9fa, #EDF0F5);
+}
+.clients h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.clients .logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.clients .logos img {
+    max-width: 100%;
+}
+.cta {
+    text-align: center;
+    padding: 60px 20px;
+    background: #333;
+    color: #fff;
+}
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.cta p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.cta .form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cta .form .input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0;
+}
+.cta .form .input-group label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.cta .form .input-group input,
+.cta .form .input-group textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.cta .form .input-group textarea {
+    resize: none;
+    height: 150px;
+}
+.cta .form .input-group .btn {
+    background: #6c63ff;
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    align-self: flex-end;
+    width: 100%;
+}
+.footer {
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer p {
+    margin: 0;
+}
+    </style>
 <body>
     <header class="header">
         <div class="container">
